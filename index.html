@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal ve slide menü</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b193061300.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 20 days code challenge, 6ncı proje, modal ve slide menu-->
+
+    <!-- navigasyon -->
+    <nav>
+      <div class="logo">
+        <img src="logo.svg" alt="ipsum logo" />
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- header üst -->
+    <header>
+      <div class="container">
+        <button class="menubtn" id="menubtn">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h1>Modal ve slide menü projesi</h1>
+        <h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+          eum! Dicta quaerat nulla maiores fugit architecto harum beatae quae
+          asperiores?
+        </h4>
+        <button id="signup" class="signup">Sign-up</button>
+      </div>
+    </header>
+
+    <!-- orta bölüm -->
+    <div class="container">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores
+        dolore dolor culpa voluptatibus vel nam doloremque harum minus veritatis
+        ut nisi a itaque modi reiciendis similique aliquid esse dignissimos,
+        quaerat veniam explicabo? Sunt itaque veniam beatae ratione eaque
+        consequuntur soluta nesciunt temporibus quia et illum, deleniti, error
+        culpa quaerat.
+      </p>
+      <h2>Soluta nesciunt temporibus</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos
+        voluptates, laudantium ipsum id vitae eligendi sunt inventore. Dolores
+        explicabo ipsa eaque odit dolor sequi in! Autem exercitationem
+        reprehenderit amet eum repellendus esse voluptates cum, modi corporis
+        quisquam possimus necessitatibus ad. Expedita ut quam veritatis
+        consectetur eveniet? Animi, consectetur praesentium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae atque,
+        libero nisi perferendis consectetur nostrum corporis cupiditate officia
+        sit fugit!
+      </p>
+      <h2>Dolores explicabo ipsa</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rem
+        totam dolorum delectus dolor cumque ut nobis nesciunt! Maiores dolor
+        fuga aliquam neque a exercitationem laboriosam! Laboriosam consectetur
+        perferendis reiciendis quisquam quae rerum eos qui, dolorem itaque vel.
+        Iure similique quae, dignissimos dolore quam sunt maxime ad perspiciatis
+        sed at aliquid minima cum magni non, omnis ab voluptatum suscipit dolor.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+        voluptatum inventore ipsum numquam quisquam magni, amet facilis soluta
+        aperiam quos voluptates quod velit illum at ut. Fugit veniam unde
+        perspiciatis doloremque, vitae ea eveniet assumenda, harum a odit
+        commodi repudiandae nulla, officiis provident quae minus nostrum debitis
+        officia praesentium exercitationem ipsa nihil illo obcaecati. Sed iure
+        nisi, nam inventore similique tempore exercitationem voluptates illum
+        magni libero maxime expedita distinctio saepe illo voluptatem voluptatum
+        consequuntur odio ex quos quod ad aperiam.
+      </p>
+    </div>
+
+    <!-- modal -->
+    <div class="modal-container displayNone" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h2>Sign-up</h2>
+        </div>
+        <div class="modal-content">
+          <p>Modal içinde placeholder örnek bir üyelik formu</p>
+          <div class="modal-form">
+            <div>
+              <label for="firstname">Adınız :</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                class="forminput"
+              />
+            </div>
+            <div>
+              <label for="Soyadınız">Soyadınız :</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                class="forminput"
+              />
+            </div>
+            <div>
+              <label for="email">Email adresiniz :</label>
+              <input type="email" name="email" id="email" class="forminput" />
+            </div>
+            <div>
+              <label for="password">Şifre :</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="forminput"
+              />
+            </div>
+            <div>
+              <label for="password2">Şifre tekrar :</label>
+              <input
+                type="password"
+                name="password2"
+                id="password2"
+                class="forminput"
+              />
+            </div>
+            <input type="submit" value="submit" class="submit" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
